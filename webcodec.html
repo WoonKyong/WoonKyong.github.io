@@ -108,7 +108,8 @@
         height: cnv.height,
         bitrate: 1000000,
         avc : { format: "annexb" },
-        hardwareAcceleration : "prefer-hardware",
+        // To test on OSE, need to disable hardware preference
+        //hardwareAcceleration : "prefer-hardware",
         framerate: fps,
       };
 
