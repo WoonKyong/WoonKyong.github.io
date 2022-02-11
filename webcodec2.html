@@ -173,10 +173,11 @@
         let time_till_next_frame = 0
         if (ready_frames.length > 0) {
           time_till_next_frame = calculateTimeTillNextFrame(ready_frames[0].timestamp);
+          //console.log(time_till_next_frame)
         }
 
         // Immediately schedule rendering of the next frame
-        setTimeout(renderFrame, time_till_next_frame);        
+        setTimeout(renderFrame, Math.min(20, time_till_next_frame));
       }
 
       function handleFrame(frame) {
