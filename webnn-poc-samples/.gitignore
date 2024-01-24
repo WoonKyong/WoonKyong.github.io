@@ -1,0 +1,9 @@
+.vscode/
+node_modules/
+**/*.tflite
+**/*.onnx
+**/*.xml
+**/*.pb
+**/*.ark
+.DS_Store
+package-lock.json
